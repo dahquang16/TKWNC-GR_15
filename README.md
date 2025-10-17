@@ -16,16 +16,16 @@
 * Giao diện người dùng
 * Bảo mật & Kiểm tra
 ### CÔNG NGHỆ SỬ DỤNG
- Backend
-Framework: Laravel 12.x
-Ngôn ngữ: PHP 8.2+
-Cơ sở dữ liệu: MySQL
- Frontend
-Tailwind CSS
-Vite
-Blade Template Engine
- Khác
-Composer – Manage PHP packages
-NPM – Install and build front-end packages
-Artisan CLI – Quản lý command nội bộ, migration, seed và schedule
-Git / GitHub – version control
+ #### Backend
+* Framework: Laravel 12.x
+* Language: PHP 8.2+
+* Database: MySQL
+ #### Frontend
+* Tailwind CSS: Design
+* Vite
+* Blade Template Engine
+ #### Khác
+* Composer – Manage PHP packages
+* NPM – Install and build front-end packages
+* Artisan CLI – internal management
+* Git / GitHub – version control
