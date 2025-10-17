@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
  ### MỤC ĐÍCH
  Web giúp sinh viên dễ dàng quản lý thời gian để lên lịch trình cho việc tham gia các hoạt động
-
+---
 ### TÍNH NĂNG 
 * Xác thực người dùng
 * Quản lý dự án
@@ -15,3 +15,17 @@
 * Nhắc nhở & Tự động hóa
 * Giao diện người dùng
 * Bảo mật & Kiểm tra
+### CÔNG NGHỆ SỬ DỤNG
+ Backend
+Framework: Laravel 12.x
+Ngôn ngữ: PHP 8.2+
+Cơ sở dữ liệu: MySQL
+ Frontend
+Tailwind CSS
+Vite
+Blade Template Engine
+💾 Khác
+Composer – Manage PHP packages
+NPM – Install and build front-end packages
+Artisan CLI – Quản lý command nội bộ, migration, seed và schedule
+Git / GitHub – version control
