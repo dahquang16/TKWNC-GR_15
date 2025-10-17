@@ -24,7 +24,7 @@ Cơ sở dữ liệu: MySQL
 Tailwind CSS
 Vite
 Blade Template Engine
-💾 Khác
+ Khác
 Composer – Manage PHP packages
 NPM – Install and build front-end packages
 Artisan CLI – Quản lý command nội bộ, migration, seed và schedule
