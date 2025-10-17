@@ -4,5 +4,5 @@
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777bb4?style=flat&logo=php&logoColor=white)](https://www.php.net)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
  ### Mục đích
- ***
+ ____________________________________
  Web giúp sinh viên dễ dàng quản lý thời gian để lên lịch trình cho việc tham gia các hoạt động
