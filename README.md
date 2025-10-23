@@ -15,6 +15,16 @@
 * Nhắc nhở & Tự động hóa
 * Giao diện người dùng
 * Bảo mật & Kiểm tra
+## MÔ HÌNH DỮ LIỆU
+### USERS
+| Cột | Kiểu dữ liệu | Ý nghĩa |
+|---|---|---|
+| id | `bigint unsigned` | Khóa chính |
+| name | `varchar(255)` | Tên người dùng |
+| email | `varchar(255), unique` | Email đăng nhập |
+| password | `varchar(255)` | Mật khẩu đã mã hóa |
+| role | `enum('student','admin')` | Phân quyền |
+| created_at / updated_at | `timestamp` | Dấu thời gian tạo/cập nhật |
 ### CÔNG NGHỆ SỬ DỤNG
  #### Backend
 * Framework: Laravel 12.x
