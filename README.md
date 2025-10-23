@@ -25,6 +25,25 @@
 | password | `varchar(255)` | Mật khẩu đã mã hóa |
 | role | `enum('student','admin')` | Phân quyền |
 | created_at / updated_at | `timestamp` | Dấu thời gian tạo/cập nhật |
+### EVENTS
+| Cột | Kiểu dữ liệu | Ý nghĩa |
+|---|---|---|
+| id | `bigint unsigned` | Khóa chính |
+| title | `varchar(255)` | Tên sự kiện |
+| description | `text` | Mô tả chi tiết |
+| start_time / end_time | `datetime` | Thời gian diễn ra |
+| location | `varchar(255)` | Địa điểm |
+| max_participants | `int` | Số lượng tham gia tối đa |
+| is_active | `tinyint(1)` | Trạng thái hoạt động |
+| created_at / updated_at | `timestamp` | Dấu thời gian tạo/cập nhật |
+### EVENT REGISTRATIONS
+| Cột | Kiểu dữ liệu | Ý nghĩa |
+|---|---|---|
+| id | `bigint unsigned` | Khóa chính |
+| user_id | `bigint unsigned` | Khóa ngoại → users.id |
+| event_id | `bigint unsigned` | Khóa ngoại → events.id |
+| registered_at | `timestamp` | Thời gian sinh viên đăng ký |
+| created_at / updated_at | `timestamp` | Dấu thời gian hệ thống |
 ### CÔNG NGHỆ SỬ DỤNG
  #### Backend
 * Framework: Laravel 12.x
