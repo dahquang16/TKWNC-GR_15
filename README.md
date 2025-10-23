@@ -15,6 +15,7 @@
 * Nhắc nhở & Tự động hóa
 * Giao diện người dùng
 * Bảo mật & Kiểm tra
+---
 ## MÔ HÌNH DỮ LIỆU
 ### USERS
 | Cột | Kiểu dữ liệu | Ý nghĩa |
@@ -44,6 +45,7 @@
 | event_id | `bigint unsigned` | Khóa ngoại → events.id |
 | registered_at | `timestamp` | Thời gian sinh viên đăng ký |
 | created_at / updated_at | `timestamp` | Dấu thời gian hệ thống |
+---
 ### CÔNG NGHỆ SỬ DỤNG
  #### Backend
 * Framework: Laravel 12.x
