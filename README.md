@@ -60,3 +60,101 @@
 * NPM – Install and build front-end packages
 * Artisan CLI – internal management
 * Git / GitHub – version control
+---
+
+## 🗂️ Projects Management (API)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **GET** | `/api/projects` | Lấy danh sách dự án |
+| **POST** | `/api/projects` | Tạo dự án mới |
+| **GET** | `/api/projects/{id}` | Lấy chi tiết dự án |
+| **PUT** | `/api/projects/{id}` | Cập nhật thông tin dự án |
+| **DELETE** | `/api/projects/{id}` | Xóa dự án |
+
+---
+
+## 📊 Statistics (API)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **GET** | `/api/project-stats` | Lấy thống kê tổng quan dự án qua API |
+
+---
+
+## 🌐 Web Interface (Routes giao diện Web)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **GET** | `/` | Trang chủ |
+| **GET** | `/dashboard` | Dashboard chính |
+| **GET** | `/projects` | Danh sách dự án |
+| **GET** | `/projects/create` | Tạo dự án mới (form) |
+| **GET** | `/projects/{id}` | Xem chi tiết dự án |
+| **GET** | `/projects/{id}/edit` | Chỉnh sửa dự án |
+| **GET** | `/profile` | Xem hồ sơ cá nhân |
+| **PATCH** | `/profile` | Cập nhật hồ sơ cá nhân |
+| **DELETE** | `/profile` | Xóa tài khoản |
+| **GET** | `/stats` | Trang thống kê chi tiết |
+| **GET** | `/stats/export/{format}` | Xuất báo cáo (CSV, JSON, PDF) |
+| **GET** | `/stats/report` | Báo cáo nâng cao |
+
+---
+
+## ✅ Subtasks Management (API)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **POST** | `/projects/{id}/subtasks` | Tạo công việc con trong dự án |
+| **PATCH** | `/subtasks/{id}/toggle` | Chuyển đổi trạng thái công việc con |
+| **DELETE** | `/subtasks/{id}` | Xóa công việc con |
+
+---
+
+## 🔐 Authentication (API & Web)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **GET** | `/login` | Trang đăng nhập |
+| **POST** | `/login` | Gửi thông tin đăng nhập |
+| **POST** | `/logout` | Đăng xuất |
+| **GET** | `/register` | Trang đăng ký |
+| **POST** | `/register` | Gửi thông tin đăng ký |
+| **GET** | `/verify-email` | Gửi email xác thực |
+| **GET** | `/verify-email/{id}/{hash}` | Xác nhận email |
+| **GET** | `/forgot-password` | Trang quên mật khẩu |
+| **POST** | `/forgot-password` | Gửi email reset mật khẩu |
+| **GET** | `/reset-password/{token}` | Trang đổi mật khẩu |
+| **POST** | `/reset-password` | Cập nhật mật khẩu mới |
+
+---
+
+## 👩‍🎓 Student Routes (Web)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **GET** | `/student/events` | Danh sách sự kiện sinh viên |
+| **GET** | `/student/events/{event}` | Xem chi tiết sự kiện |
+| **POST** | `/student/events/{event}/register` | Đăng ký tham gia sự kiện |
+| **DELETE** | `/student/events/{event}/unregister` | Hủy đăng ký tham gia sự kiện |
+| **GET** | `/student/my-events` | Danh sách sự kiện của tôi |
+
+---
+
+## 🧩 Admin Routes (Web)
+
+| Method | Endpoint | Description |
+|:-------|:----------|:-------------|
+| **GET** | `/admin/dashboard` | Dashboard quản trị |
+| **GET** | `/admin/events` | Danh sách sự kiện |
+| **POST** | `/admin/events` | Thêm sự kiện mới |
+| **GET** | `/admin/events/create` | Form tạo sự kiện |
+| **GET** | `/admin/events/{event}` | Chi tiết sự kiện |
+| **PUT/PATCH** | `/admin/events/{event}` | Cập nhật sự kiện |
+| **DELETE** | `/admin/events/{event}` | Xóa sự kiện |
+| **GET** | `/admin/events/{event}/edit` | Form chỉnh sửa sự kiện |
+| **GET** | `/admin/events/{event}/registrations` | Danh sách đăng ký sự kiện |
+| **GET** | `/admin/registrations` | Toàn bộ danh sách đăng ký |
+| **DELETE** | `/admin/registrations/{registration}` | Xóa đăng ký |
+
+---
